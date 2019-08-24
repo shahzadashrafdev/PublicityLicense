@@ -1,0 +1,189 @@
+body{
+    margin: 0px!important;
+    padding:0px!important;
+    font-family: 'Open Sans', sans-serif;
+}
+.publicity-header{
+    height:400px;
+    background-image: -moz-linear-gradient( -45deg, rgb(123,38,145) 0%, rgb(11,58,92) 100%);
+    background-image: -webkit-linear-gradient( -45deg, rgb(123,38,145) 0%, rgb(11,58,92) 100%);
+    background-image: -ms-linear-gradient( -45deg, rgb(123,38,145) 0%, rgb(11,58,92) 100%);
+
+}
+.publicity-header h1{
+    font-size: 50px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.04;
+    padding-top:68px;
+    margin-bottom:20px;
+}
+.publicity-header h4{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+}
+
+.publicity-header span{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(238, 238, 238, 0.502);
+    line-height: 1.2;
+    text-align: center;
+    width:60%;
+    margin-top:20px;
+    
+}
+.ts{
+    font-weight:800!important;
+}
+.mt42p{
+    margin-top:38px;
+}
+.publicity-header .cname{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.1);
+    width: 540px;
+    height: 60px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.875;
+    border:0;
+    padding: 10px;
+    text-decoration: none;
+    outline:none;
+    
+}
+.publicity-header .btn-primary{
+    width: 161px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.375;
+    border-radius:0;
+}
+.publicity-header .btn-primary:focus{
+    outline:none!important;
+    box-shadow:none!important;
+}
+.bodycontent{
+    background-color: #f5f7fb;
+}
+.bodycontent a{
+    text-decoration: none;
+    color:#21649F!important;
+}
+.three-steps-heading{
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.313;
+    
+    margin:55px auto 58px auto;
+}
+.three-steps-bar{
+    background-image: -moz-linear-gradient( 0deg, rgb(241,196,15) 0%, rgb(68,157,68) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(241,196,15) 0%, rgb(68,157,68) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(241,196,15) 0%, rgb(68,157,68) 100%);
+    height:4px;
+}
+.three-steps-detail h3{
+    font-size: 20px;
+    /*font-weight: 800;*/
+    font-family: "Open Sans", sans-serif;
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    text-align: center;
+}
+.three-steps-detail p{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    text-align: center;
+}
+.list-holders{
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow: 0px 1px 13.5px 1.5px rgba(0, 0, 0, 0.05);
+    width:50px;
+    height:50px;
+}
+ .system-works-list{
+    position: relative;
+    border-color: rgb(204, 204, 204);
+    background-color:rgb(255, 255, 255);
+    margin:-28px 0px 10px 140px;
+}
+.accept-reject-list{
+    position: relative;
+    top:0px;
+    /*margin:-25px 50px 10px 90px;*/
+}
+
+.system-works-list-num{
+    position:absolute;
+    font-size: 20px;
+    font-family:'Open Sans'; 
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    left:15px;
+    top:8px;
+    font-size: 20px;
+}
+.accept-reject-num{
+    position:absolute;
+    color: rgb(255, 255, 255);
+    line-height: 1.83;
+    left:40px;
+    top:55px;
+}
+.accept-reject{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(102, 102, 102);
+    line-height: 1.75;
+    margin-top:52px;
+}
+.r-accepted{
+    background-color: rgb(68, 157, 68,0.102);
+    box-shadow: 0px 1px 13.5px 1.5px rgba(0, 0, 0, 0.05);
+    height: 148px;
+}
+.r-rejected{
+    background-color: rgb(235, 194, 16, 0.102);
+    box-shadow: 0px 1px 13.5px 1.5px rgba(0, 0, 0, 0.05);
+}
+.accepted-lhs p, .rejected-rhs p{
+    padding-top:30px;
+}
+.traffic-contain{
+    background-color: rgb(233,233,233);
+    margin-top:40px;
+}
+.traffic-detail h3{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.653;
+}
+.traffic-detail p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.5;
+}
