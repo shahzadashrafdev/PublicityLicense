@@ -18,58 +18,67 @@ body{
     line-height: 1.04;
     padding-top:68px;
     margin-bottom:20px;
+    letter-spacing: -2px;
 }
 .publicity-header h4{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 300!important;
     font-family: "Open Sans", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 1;
 }
-
-.publicity-header span{
+.custom-link-generator
+{
+    margin: auto;
+    padding: auto;
+}
+.publicity-header h5{
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 300!important;
     font-family: "Open Sans", sans-serif;
     color: rgba(238, 238, 238, 0.502);
     line-height: 1.2;
-    text-align: center;
-    width:60%;
-    margin-top:20px;
-    
+    margin: 20px 100px 0 100px!important;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 .ts{
     font-weight:800!important;
 }
 .mt42p{
-    margin-top:38px;
+    margin-top:38px!important;
 }
-.publicity-header .cname{
+
+.publicity-header input{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.1);
-    width: 540px;
+    width: 425px;
     height: 60px;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.875;
     border:0;
-    padding: 10px;
+    padding: 15px;
     text-decoration: none;
-    outline:none;
-    
+    outline:none;    
 }
-.publicity-header .btn-primary{
-    width: 161px;
+.publicity-header .btn-g-link{
+    width: 150px;
+    background-color: #007bff;
     height: 60px;
     font-size: 16px;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
     color: rgb(255, 255, 255);
-    line-height: 1.375;
+    line-height: 1.875;
     border-radius:0;
+    border:0;
 }
-.publicity-header .btn-primary:focus{
+.publicity-header .btn-g-link:focus{
     outline:none!important;
     box-shadow:none!important;
 }
@@ -84,6 +93,7 @@ body{
     font-size: 32px;
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
+    text-align: center;
     color: rgb(51, 51, 51);
     line-height: 1.313;
     
@@ -155,20 +165,36 @@ body{
     font-family: "Open Sans", sans-serif;
     color: rgb(102, 102, 102);
     line-height: 1.75;
-    margin-top:52px;
+    margin-top:40px;
+    display:flex;
+    justify-content: center;
+    
 }
 .r-accepted{
     background-color: rgb(68, 157, 68,0.102);
     box-shadow: 0px 1px 13.5px 1.5px rgba(0, 0, 0, 0.05);
     height: 148px;
+    width:auto!important;
+    
 }
 .r-rejected{
     background-color: rgb(235, 194, 16, 0.102);
     box-shadow: 0px 1px 13.5px 1.5px rgba(0, 0, 0, 0.05);
+    width:auto!important;
 }
 .accepted-lhs p, .rejected-rhs p{
     padding-top:30px;
 }
+/*.accepted-lhs p::before{
+    content: '';
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border: 4px solid lightblue;
+    background-color: black;
+    position:relative;
+    top:50px;
+}*/
 .traffic-contain{
     background-color: rgb(233,233,233);
     margin-top:40px;
@@ -186,4 +212,50 @@ body{
     font-family: "Open Sans", sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.5;
+}
+
+@media (max-width:768px){
+    .publicity-header{
+        height:auto!important;
+    }
+    .publicity-header h1{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .publicity-header h4{
+        margin-top:30px;
+    }
+    .publicity-header input, .publicity-header .btn-g-link{
+        margin:auto auto 15px auto!important;
+        width:100%;
+        height: 35px;
+    }
+    .publicity-header input::placeholder{
+
+        font-size:13px!important;
+    }
+    .publicity-header h5{
+        margin:auto!important;
+        padding: 20px 0 30px 0!important
+    }
+    .three-steps-bar{
+        visibility: hidden;
+    }
+    .three-steps-detail p{
+        margin-bottom: 50px;
+    }
+    .system-works-list{
+        margin: auto auto 20px auto!important;
+    }
+    .accept-reject{
+        display:block!important;
+        margin: auto;
+    }
+    .r-accepted, .r-rejected{
+        height: auto!important;
+        width: auto!important;   
+    }
+    .r-rejected{
+        margin-top: 30px;
+    }   
 }
