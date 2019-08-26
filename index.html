@@ -7,7 +7,7 @@
     <meta name="keywords" content="Free Publiclity License, Aspose Free Publiclity License, Aspose Free License, Temporary License">
     <meta name="robots" content="noindex,nofollow">
     <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
-    <link href="custom-publicitylicense.css" rel="stylesheet" />
+    <link href="custom-publicitylicenseV2.css" rel="stylesheet" />
     <title>Free Aspose Publiclity License</title>
     
     <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/aspose/css/common.css?v0.13" type="text/css" />
@@ -26,19 +26,75 @@
 
                 $(".mobileanchor").removeAttr("href");
             }
-        });</script>
+        });
+    </script>
+    <script type="text/javascript">
+        var lv=$('#l-field').val();
+        $('#l-btn').click(function(){
+            if(lv == ' ')
+            {
+                alert('Please enter a valid company name');
+                $('#l-field').focus();
+            }
+            else
+            {
+                function copyToClipboard('#l-field') {
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val($('#l-field').text()).select();
+                document.execCommand("copy");
+                $("l-txt").text('Link Copied!');
+                $temp.remove();
+                }
+            }
+        
+        })
+        
+      </script>
+    <style type="text/css">
+        /*#footer {
+            bottom: 0 !important;
+        }
+
+        body {
+            background-image: none !important;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+        }
+
+        .noprint2 {
+            list-style: none outside none;
+        }
+
+        .bodycontent {
+            min-height: 400px;
+        }
+
+        h2, h3 {
+            padding-bottom: 5px;
+        }*/
+
+    </style>
 </head>
 <body>
   <div id='DynabicMenuInnerDiv'></div>
 
-    <div class="container-fluid publicity-header">
+    <div class="container-fluid publicity-header minifyheader">
         <div class="container">
-            <div class="row h-100 justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    
                 <h1>Get a Free Publicity License</h1>
                 <h4>A publicity license is a time-restricted full license that lets you use every feature of a product.</h4>
-                <h4>We offer for <strong class="ts">free a 6-month</strong> license to the users that bring enought web traffic to <u>aspose.com.</u></h4>
-                <input type="text" class="cname mt42p" placeholder="Enter your company name here"><button type="button" class="btn btn-primary mt42p">Generate Link</button>
-                <span>https://www.aspose.com/?utm_source=yourcompanyname&utm_medium=content-text&utm_campaign=publicity-license</span>
+                <h4>We offer for <strong class="ts">free a 6-month</strong> license to the users that bring enough web traffic to <u>aspose.com.</u></h4>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!--<div class="g-wrapper mt42p" style=""><input type="text" placeholder="Enter your company name here"><button type="button" class="btn-g-link">Generate Link</button><h5>https://www.aspose.com/?utm_source=yourcompanyname&utm_medium=content-text&utm_campaign=publicity-license</h5></div>-->
+                <form class="form-horizontal col-lg-8">
+                        <div class="f-wrapper mt42p text-center"><input type="text" id="l-field" placeholder="Enter your company name here"><button type="button" id="l-btn" class="btn-g-link">Generate Link</button></div>
+                        <div class="custom-link-generator text-center"><h5 id="l-txt">https://www.aspose.com/?utm_source=yourcompanyname&utm_medium=content-text&utm_campaign=publicity-license</h5></div>
+                </form>
             </div>
         </div>
     </div>
@@ -55,18 +111,19 @@
             </div>
         
         
-        <div class="row justify-content-center accept-reject">
+        <div class="row d-md-block">
                 
-            <div class="col-lg-12 d-flex justify-content-center">
+            <div class="col-md-12 accept-reject"> 
             <div class="col-lg-6 r-accepted mx-3">
                 <div class="accepted-lhs d-flex justify-content-center align-items-center">
-                    <img src="accepted.png">
+                    <img src="accepted.png" class="lazyloaded">
+                    <!--<div class="ar-list" style="border:4px solid aquamarine;border-radius:50%; width:60px; height:50px;background-color:blue;position:relative;top:50px;"><i class="fa fa-check fa-2x"></i></div>-->
                     <p class="pl-2">If we consider that the traffic you brought to <a href="https://www.aspose.com" target="_blank">aspose.com</a> in the last 30 days is sufficient then we will approve your request and you will be provided a publicity license.</p>
                 </div>
             </div>
             <div class="col-lg-6 r-rejected mx-3">
                     <div class="rejected-rhs d-flex justify-content-center align-items-center">
-                        <img src="rejected.png">
+                        <img src="rejected.png" class="lazyloaded">
                         <p class="pl-2">In case the traffic you brought is not sufficient then you are encouraged to keep trying each month until your request is approved.</p>
                     </div>
             </div>
@@ -86,7 +143,7 @@
                 <p>We cannot state specific numbers because it is not the way publicity license works.The number of visitors you provide is important, but the quality of those visitors is even more important.</p>
               </div>
             </div>
-            <div class="col-lg-6 px-0 pl-3">
+            <div class="col-lg-6 px-0">
              <div class="traffic-rhs">
                 <p>If you have any questions, please feel free to contact our <a href="#">sales support team</a></p>
              </div>
