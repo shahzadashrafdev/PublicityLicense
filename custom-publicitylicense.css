@@ -317,7 +317,7 @@ body{
         visibility: hidden;
     }
     .three-steps-detail p{
-        margin-bottom: 50px;
+        margin-bottom: 35px;
     }
     .accept-reject{
         display:block!important;
@@ -326,4 +326,11 @@ body{
     .r-rejected{
         margin-top: 30px;
     }   
+    .accepted-lhs, .rejected-rhs{
+        padding:10px;
+    }
+    .accepted-lhs p, .rejected-rhs p{
+        padding-top: 10px!important;
+        font-size: 14px;
+    }
 }
