@@ -34,7 +34,7 @@
             </div>
             <div class="row justify-content-center">
                 <form class="form-horizontal col-lg-8">
-                        <div class="f-wrapper mt42p text-center"><input type="text" id="l-field" placeholder="Enter your company name here" required/><button type="button" id="l-btn" class="copyurl" data-clipboard-action="copy" data-clipboard-target="#copyboard">Copy URL</button><span class="copiedtooltip">URL Copied!</span></div>
+                        <div class="f-wrapper mt42p text-center"><input type="text" id="l-field" placeholder="Enter your company name here" required/><button type="submit" id="l-btn" class="copyurl" data-clipboard-action="copy" data-clipboard-target="#copyboard">Copy URL</button><span class="copiedtooltip">URL Copied!</span></div>
                         <div class="custom-link-generator text-center"><textarea id="copyboard" readonly>https://www.aspose.com/?utm_source=yourcompanyname&utm_medium=content-text&utm_campaign=publicity-license</textarea></div>
                         
                 </form>
@@ -130,13 +130,9 @@
       $('.copyurl').click(function(){$(this).siblings('.copiedtooltip').show();setTimeout(function(){$('.copiedtooltip').hide();},2000);});
   </script>
   <script>
-    $(function(){
-      $('#l-btn').on('submit', function(event){
-          event.preventDefault();
-          event.stopPropagation();
-          return false;
-      });
-    });
+    $("form").submit(function(e){
+      e.preventDefault();
+    })
   </script>
   </body>
 </html>
