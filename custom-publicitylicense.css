@@ -29,8 +29,39 @@ body{
 }
 .custom-link-generator
 {
-    margin: auto;
+    margin: 20px auto auto auto;
     padding: auto;
+    
+}
+.custom-link-generator textarea{
+    width:100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300!important;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(238, 238, 238, 0.502);
+    outline: none;
+    resize: none;
+    height: auto;
+    overflow: hidden;
+}
+.f-wrapper{
+    
+    margin:0 auto;
+    padding:auto;
+}
+.f-wrapper span{
+       
+       position: relative;
+       font-size: 16px;
+       font-weight: 300;
+       font-family: "Open Sans", sans-serif;
+       color: rgba(238, 238, 238, 0.502);
+       background-color: transparent;
+       display: none;      
 }
 .publicity-header h5{
     font-size: 14px;
@@ -66,7 +97,7 @@ body{
     text-decoration: none;
     outline:none;    
 }
-.publicity-header .btn-g-link{
+.publicity-header .copyurl{
     width: 150px;
     background-color: #007bff;
     height: 60px;
@@ -89,6 +120,13 @@ body{
     text-decoration: none;
     color:#21649F!important;
 }
+.publicity-header a{
+    text-decoration: underline!important;
+    color:rgb(255, 255, 255)!important;
+}
+.publicity-header a:hover, .publicity-header a:active{
+    text-decoration: underline!important;
+}
 .three-steps-heading{
     font-size: 32px;
     font-weight: 600;
@@ -106,12 +144,13 @@ body{
     height:4px;
 }
 .three-steps-detail h3{
-    font-size: 20px;
-    /*font-weight: 800;*/
+    font-size: 18px;
+    font-weight: 600;
     font-family: "Open Sans", sans-serif;
     color: rgb(102, 102, 102);
     line-height: 1.2;
     text-align: center;
+
 }
 .three-steps-detail p{
     font-size: 16px;
@@ -136,9 +175,10 @@ body{
     margin:-28px 0px 10px 140px;
 }
 .accept-reject-list{
+    border-color: rgb(255, 255, 255);
     position: relative;
-    top:0px;
-    /*margin:-25px 50px 10px 90px;*/
+    top:-5px;
+    flex:1 0 auto;
 }
 
 .system-works-list-num{
@@ -157,8 +197,14 @@ body{
     position:absolute;
     color: rgb(255, 255, 255);
     line-height: 1.83;
-    left:40px;
-    top:55px;
+    left:12px;
+    top:13px;
+}
+#item-green{
+    background-color: rgb(68, 157, 68);
+}
+#item-yellow{
+    background-color: rgb(235, 194, 16);
 }
 .accept-reject{
     font-size: 16px;
@@ -185,19 +231,13 @@ body{
 .accepted-lhs p, .rejected-rhs p{
     padding-top:30px;
 }
-/*.accepted-lhs p::before{
-    content: '';
-    width:50px;
-    height:50px;
-    border-radius: 50%;
-    border: 4px solid lightblue;
-    background-color: black;
-    position:relative;
-    top:50px;
-}*/
 .traffic-contain{
     background-color: rgb(233,233,233);
     margin-top:40px;
+}
+.traffic-lhs, .traffic-rhs{
+    width: 90%;
+    margin:0 auto;
 }
 .traffic-detail h3{
     font-size: 22px;
@@ -213,19 +253,57 @@ body{
     color: rgb(51, 51, 51);
     line-height: 1.5;
 }
-
-@media (max-width:768px){
+@media (max-width:1199px){
     .publicity-header{
         height:auto!important;
     }
-    .publicity-header h1{
-        font-size: 35px;
-        font-weight: 700;
+    .system-works-list{
+        margin: -25px auto 10px auto!important;
     }
     .publicity-header h4{
         margin-top:30px;
     }
-    .publicity-header input, .publicity-header .btn-g-link{
+    .publicity-header h5{
+        margin:auto!important;
+        padding: 20px 0 30px 0!important
+    }
+}
+
+@media (max-width:991px){
+    .publicity-header{
+        height:auto!important;
+    }
+    .publicity-header h4{
+        margin-top:30px;
+    }
+    .custom-link-generator textarea{
+        padding-bottom: 30px;
+    }
+    .system-works-list{
+        margin: 20px auto 20px auto!important;
+    }
+    .r-accepted, .r-rejected{
+        height: auto!important;
+        width: auto!important;   
+    }
+    .three-steps-bar{
+        visibility: hidden;
+    }
+    .three-steps-heading{
+        margin-bottom: 10px;
+    }
+    .f-wrapper span{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:868px){
+
+    .publicity-header h1{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .publicity-header input, .publicity-header .copyurl{
         margin:auto auto 15px auto!important;
         width:100%;
         height: 35px;
@@ -234,26 +312,16 @@ body{
 
         font-size:13px!important;
     }
-    .publicity-header h5{
-        margin:auto!important;
-        padding: 20px 0 30px 0!important
-    }
+    
     .three-steps-bar{
         visibility: hidden;
     }
     .three-steps-detail p{
         margin-bottom: 50px;
     }
-    .system-works-list{
-        margin: auto auto 20px auto!important;
-    }
     .accept-reject{
         display:block!important;
         margin: auto;
-    }
-    .r-accepted, .r-rejected{
-        height: auto!important;
-        width: auto!important;   
     }
     .r-rejected{
         margin-top: 30px;
