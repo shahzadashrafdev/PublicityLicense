@@ -29,7 +29,7 @@ body{
 }
 .custom-link-generator
 {
-    margin: 20px auto auto auto;
+    margin: 35px auto auto auto;
     padding: auto;
     
 }
@@ -48,6 +48,9 @@ body{
     height: auto;
     overflow: hidden;
 }
+.form-horizontal{
+    margin: 38px auto auto auto!important;
+}
 .f-wrapper{
     position: relative;
     margin:0 auto;
@@ -55,8 +58,9 @@ body{
 }
 .f-wrapper span{
        position: absolute;
-       right: -30px;
-       top: 15px;
+       right: 230px;
+       left:230px;
+       top: 65px;
        font-size: 16px;
        font-weight: 300;
        font-family: "Open Sans", sans-serif;
@@ -64,26 +68,9 @@ body{
        background-color: transparent;
        display: none;      
 }
-.publicity-header h5{
-    font-size: 14px;
-    font-weight: 300!important;
-    font-family: "Open Sans", sans-serif;
-    color: rgba(238, 238, 238, 0.502);
-    line-height: 1.2;
-    margin: 20px 100px 0 100px!important;
-    white-space: normal;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
-}
 .ts{
     font-weight:800!important;
 }
-.mt42p{
-    margin-top:38px!important;
-}
-
 .publicity-header input{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.1);
@@ -254,6 +241,9 @@ body{
     color: rgb(51, 51, 51);
     line-height: 1.5;
 }
+
+/* RESPONSIVE MEDIA QUERIES START FROM HERE*/
+
 @media (max-width:1199px){
     .publicity-header{
         height:auto!important;
@@ -264,21 +254,28 @@ body{
     .publicity-header h4{
         margin-top:30px;
     }
-    .publicity-header h5{
-        margin:auto!important;
-        padding: 20px 0 30px 0!important
+    .custom-link-generator textarea{
+        padding-bottom: 50px;
     }
 }
 
 @media (max-width:991px){
+    .container{
+        margin:auto!important;
+    }
     .publicity-header{
         height:auto!important;
     }
     .publicity-header h4{
-        margin-top:30px;
+        margin: 30px 20px auto 20px;
+        line-height: 26px;
     }
     .custom-link-generator textarea{
-        padding-bottom: 30px;
+        padding-bottom: 50px;
+    }
+    .publicity-header input::placeholder{
+
+        font-size:14px!important;
     }
     .system-works-list{
         margin: 20px auto 20px auto!important;
@@ -296,44 +293,47 @@ body{
     .f-wrapper span{
         font-size: 12px;
         margin:0 auto;
-        position: relative;
     }
 }
 
-@media (max-width:868px){
+@media (max-width:768px){
 
     .publicity-header h1{
-        font-size: 35px;
-        font-weight: 700;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .publicity-header h4{
+        font-size: 18px;
+        margin: 30px 20px auto 20px;
+        line-height: 26px;
     }
     .publicity-header input, .publicity-header .copyurl{
         margin:auto auto 15px auto!important;
-        width:100%;
-        height: 35px;
+        width:90%;
+        height: 45px;
     }
-    .publicity-header input::placeholder{
-
-        font-size:13px!important;
-    }
-    
     .three-steps-bar{
         visibility: hidden;
     }
-    .three-steps-detail p{
-        margin-bottom: 35px;
-    }
     .accept-reject{
         display:block!important;
-        margin: auto;
+        margin:0 auto;
     }
     .r-rejected{
         margin-top: 30px;
     }   
     .accepted-lhs, .rejected-rhs{
         padding:10px;
+        margin: 20px auto 20px auto;
     }
     .accepted-lhs p, .rejected-rhs p{
         padding-top: 10px!important;
         font-size: 14px;
+    }
+    .f-wrapper span{
+        left: 80px;
+        right:80px;
+        top: 120px;
+        bottom:120px;
     }
 }
